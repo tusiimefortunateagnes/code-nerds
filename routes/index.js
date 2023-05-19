@@ -4,7 +4,7 @@ const router = express.Router();
 const { compare, toHash } = require("../services/password");
 
 router.get("/", (req, res) => {
-  return res.status(200).send({ message: "Hello world!" });
+  return res.status(200).send({ message: "pong!" });
 });
 
 router.post("/login", async (req, res) => {
